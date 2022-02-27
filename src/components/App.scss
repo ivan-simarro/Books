@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  
+  & p {
+    font-size: 2rem;
+    color: #212529;
+    margin: 2rem;
+  }
+  
+  & .body {
+    & > ul > li {
+      list-style: none;
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .app{
+
+    flex-direction: column;
+
+    & .body {
+      margin-left: -1.5rem;
+    }
+  }
+}

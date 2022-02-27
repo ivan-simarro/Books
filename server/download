@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cat urls | while read url ; do
+    output=$(echo images/${url##*/} | tr -d "%")
+    curl $url > $output
+done

@@ -1,0 +1,71 @@
+.book {
+  border: 1px solid #e4e5e9;
+  color: #434449;
+  display: flex;
+  padding: 1.3rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+
+  &__img {
+    width: 14rem;
+  }
+
+  &__content {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #3f51b5;
+    font-size: 1.8rem;
+  }
+
+  &__author {
+    font-size: 1.7rem;
+    font-style: italic;
+  }
+
+  &__publisher {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+
+  &__synopsis {
+    white-space: break-spaces;
+    display: block;
+    flex-basis: 80%;
+    font-size: 1.3rem;
+  }
+
+  &__control-container {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: -2.1rem;
+    
+    & > *{
+      & > *{ 
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+      }
+    }
+  }
+
+  &__button {
+    background: white;
+    color: #434449;
+    border: 1px solid #f1f1f4;
+    cursor: pointer;
+  }
+}
