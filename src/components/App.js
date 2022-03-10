@@ -28,7 +28,7 @@ export default function App() {
 
   useEffect(() => {
     booksState.books !== [] && setDiscovering(booksState.books);
-  }, [booksState]);
+  }, [booksState.books]);
 
   // console.log("booksState"); comprobar la carga de datos
   function handleClick(e) {

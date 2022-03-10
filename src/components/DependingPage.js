@@ -22,7 +22,7 @@ export default function DependingPage({ page, discovering, loading, handleClick,
       ) : (
         <ul style={{ marginLeft: "1.5rem" }}>
           <>
-            {page !== "Discover" && JSON.stringify(page === "Reading" ? reading : finished) === "[]" && (
+            {page !== "Discover" && (page === "Reading" ? reading : finished).length === 0 && (
               <p>
                 Hey there! This is where books will go when you've finished
                 reading them. Get started by heading over to{" "}
